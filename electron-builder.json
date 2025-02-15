@@ -1,0 +1,15 @@
+{
+    "appId" : "com.csc126.camsacnner",
+    "files" : ["dist-electron" , "dist-react"],
+    "icon" : "./CamScammerIcon.png",
+    "mac": {
+        "target" : "dmg"
+    },
+    "linux" : {
+        "target" : "AppImage", 
+        "category" : "Utility"
+    },
+    "win": {
+        "target" : ["portable" , "msi"]
+    }
+}
