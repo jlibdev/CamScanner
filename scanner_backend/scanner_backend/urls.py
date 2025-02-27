@@ -16,14 +16,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from scan.views import scan_image, video_feed
+from scan.views import video_feed , start_camera , stop_camera
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('scan/' , scan_image, name="scan-image"),
     path('video_feed/' , video_feed, name='video-feed'),
+    path('start_cam/' , start_camera, name='start_cam'),
+    path('stop_cam/' , stop_camera, name='stop_cam'),
 ]
 
 

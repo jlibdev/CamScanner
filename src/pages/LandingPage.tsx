@@ -6,16 +6,18 @@ const LandingPage = () => {
     console.log("import");
   }
   return (
-    <div className="font-[Jura] w-screen h-screen p-5">
+    <div className="font-[Jura] w-screen h-screen p-5 overflow-hidden">
       <section className="flex w-full justify-center items-center flex-col">
         <p className="text-7xl">CAMSCAMMER</p>
         <section className="grid grid-cols-2 gap-20 mt-10">
           <BigButton
+            link="/"
             icon={<FolderDown />}
             buttonLabel="import image from local storage"
             eventHandle={handleImportClick}
           />
           <BigButton
+            link="/capture"
             icon={<Camera />}
             buttonLabel="capture image from camera"
             eventHandle={handleImportClick}
